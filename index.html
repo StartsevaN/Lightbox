@@ -2,70 +2,84 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Lightbox</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/default-skin.css">
+    <title>Lightbox</title>        
     <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/default-skin.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-          <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-          </div>
+<body>    
+    <div class="conteiner">
+        <header class="header">
+            <div class="logo">
+                <img src="images/0068copy.jpg" alt="logo">
+            </div>
+        </header>
+        <main class="main">
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
 
-          <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__counter"></div>
-              <div class="pswp__top-bar">
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                          <div class="pswp__preloader__cut">
-                              <div class="pswp__preloader__donut"></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div>
-              </div>
-              <button class="pswp__button pswp__button--arrow--left icon-arrow-left" title="Previous (arrow left)"></button>
-              <button class="pswp__button pswp__button--arrow--right icon-arrow-right" title="Next (arrow right)"></button>
-              <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="conteiner">
-    <ul class="gallery js-lightbox-gallery">
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/0068copy.jpg" data-full-size="700x700" data-full-url="images/0068copy.jpg">
-            <div class="gallery__description">
-                <h2>Title1</h2>
-                <p>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</p>
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__counter"></div>
+                        <div class="pswp__top-bar">
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left icon-arrow-left" title="Previous (arrow left)"></button>
+                        <button class="pswp__button pswp__button--arrow--right icon-arrow-right" title="Next (arrow right)"></button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/2v2_groendalcentret-1.jpg" data-full-size="1200x901" data-full-url="images/2v2_groendalcentret-1.jpg">
-            <div class="gallery__description">
-                <h2>Title2</h2>
-                <p>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</p>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/2v2_groendalcentret-3.jpg" data-full-size="1200x901" data-full-url="images/2v2_groendalcentret-3.jpg">
-            <div class="gallery__description">
-                <h2>Title3</h2>
-                <p>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</p>
-            </div>
-          </li>
-        </ul>
-  </div>
+
+            <div class="content">
+                <h1>Gallery with Lightbox</h1>
+                <ul class="gallery js-lightbox-gallery">
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="images/flowers.jpg" data-full-size="700x700" data-full-url="images/flowers.jpg">
+                        <div class="gallery__description">
+                            <h2>Title1</h2>
+                            <p>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</p>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="images/2v2_groendalcentret-1.jpg" data-full-size="1200x901" data-full-url="images/2v2_groendalcentret-1.jpg">
+                        <div class="gallery__description">
+                            <h2>Title2</h2>
+                            <p>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</p>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="images/2v2_groendalcentret-3.jpg" data-full-size="1200x901" data-full-url="images/2v2_groendalcentret-3.jpg">
+                        <div class="gallery__description">
+                            <h2>Title3</h2>
+                            <p>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div> 
 
   <script src="scripts/photoswipe.min.js" charset="utf-8"></script>
   <script src="scripts/photoswipe-ui-default.min.js" charset="utf-8"></script>

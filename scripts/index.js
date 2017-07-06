@@ -4,7 +4,8 @@ var defaultOptions = {
     escKey: true,
     arrowKeys: true,
     bgOpacity: 0.8,
-    showHideOpacity: false
+    showHideOpacity: true,
+    fullscreenEl: false
 };
 
 var createGallery = function (gallery) {
@@ -77,7 +78,7 @@ var initGallery = function (container) {
     var imageArray = Array.from(images);
 
     imageArray.forEach(function (image) {
-        image.addEventListener("click", () => {
+        image.addEventListener("click", function() {
             galleryModel.options.index = imageArray.indexOf(image);
             createGallery(galleryModel);
         });
