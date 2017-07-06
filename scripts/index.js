@@ -46,7 +46,8 @@ var buildPhotoswipeItems = function (imagesItems) {
         var newItem = {
             src: item.dataset['fullUrl'],
             w: width,
-            h: height
+            h: height,
+            title: item.nextElementSibling.innerHTML
         }
         result.push(newItem);
     }
