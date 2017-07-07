@@ -97,49 +97,96 @@ h1 {
   margin: 0 0 10px;
 }
 
-.pswp__container {
-  padding: 20px;
-}
-
 .pswp__ui--fit .pswp__top-bar, .pswp__ui--fit .pswp__caption {
   background-color: inherit;
 }
 
-.pswp__button--arrow--right:before {
+.pswp__top-bar {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  height: auto;
+  width: auto;
+  left: auto;
+}
+
+.pswp__counter {
+  left: 20px;
+  top: 17px;
+  padding: 0;
+  height: auto;
+  line-height: inherit;
+} 
+
+.pswp__container {
+  padding: 20px;
+}
+
+.pswp__button--arrow--left, 
+.pswp__button--arrow--right {
+  margin-top: -25px;
+}
+
+.pswp__button--arrow--right {
   background: url(../images/icon-arrow-right.svg) no-repeat;
   background-size: 100% 100%;
   background-color: inherit;
+  width: 50px;
+  height: 50px;
+  right: 5px;
 }
 
+.pswp__button--arrow--right:before,
 .pswp__button--arrow--left:before {
+  display: none;
+}
+
+.pswp__button--arrow--left {
   background: url(../images/icon-arrow-left.svg) no-repeat;
   background-size: 100% 100%;
   background-color: inherit;
+  width: 50px;
+  height: 50px;
+  left: 5px;
 }
 
 .pswp__button--close {
   background: url(../images/icon-close.svg) no-repeat;
   background-size: 100% 100%;
   background-color: inherit;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
-.pswp__top-bar {
-  padding: 20px;
+.pswp__caption {
+  min-height: auto;
 }
 
 .pswp__caption__center {
   text-align: center;
+  padding: 0 0 20px;
+  max-width: 600px;
+  color: #fff;
 }
 
 .pswp__caption__center h2 {
   text-transform: uppercase;
   font-size: 16px;
+  margin: 0 0 15px;
 }
 
-.pswp__counter {
-  left: 20px;
-  top: 20px;
-}    
+.pswp__caption__center p {
+  margin: 0;
+}
+
+.pswp__caption__center p + p {
+  margin: 15px 0 0;
+}  
+
+.pswp__preloader {
+  margin: 0;
+}
 
 .pswp--animate_opacity,
 .pswp__bg,
